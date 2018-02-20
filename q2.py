@@ -11,10 +11,10 @@ import random
 def main():
     print("WARNING: Feeding this program non-prime values will not go well! You have been warned!")
     print("NOTE: Pay attention to number of bits for each number.")
-    parser = argparse.ArgumentParser(description='USAGE: q2.py int p1, int p2, int e')
-    parser.add_argument('p1', metavar='p1', type=int, help="First prime value", nargs=1)
-    parser.add_argument('p2', metavar='p2', type=int, help="Second prime value", nargs=1)
-    parser.add_argument('e', metavar='e', type=int, help="Encryption element", nargs=1)
+    parser = argparse.ArgumentParser(description='USAGE: q2.py int p1, int p2, int e default: 65537, 553699199426609, 82564196390631')
+    parser.add_argument('p1', metavar='p1', type=int, help="First prime value", nargs=1, default=65537)
+    parser.add_argument('p2', metavar='p2', type=int, help="Second prime value", nargs=1, default=553699199426609)
+    parser.add_argument('e', metavar='e', type=int, help="Encryption element", nargs=1, default=825641896390631)
     arguments = parser.parse_args()
     # Declare our variables
     p = arguments.p1[0]
