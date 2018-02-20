@@ -14,6 +14,7 @@ def main():
     parser.add_argument('bits', metavar='bits', type=int, nargs=1)
     parser.add_argument('m', metavar='M', type=int, nargs=1)
     parser.add_argument('n', metavar='N', type=int, nargs=1)
+    var
 
 if __name__ == '__main__':
     main()
