@@ -5,7 +5,12 @@
 # the given number of bits and the given values of m and n.
 # (The example given in textbook has 8 bits).
 #   Use your code to encode and decode a message and prove that it works.
-# If you are not coding, your example knapsack should be at least 12 bits.
+# GRADER PLEASE READ:
+# I interpret m and n as binary integers, that is made up of 1s and 0s and
+# will encrypt and decrypt them using a randomly generated system of given
+# numbers of bits - as in qa.py 8 10101010 01010101 will encrypt
+# both these 8 bit long integers using a randomly generated napsack
+# that will be printed
 
 import argparse
 
@@ -18,7 +23,8 @@ def main():
     num_bits = arguments.bits[0]
     m = arguments.m[0]
     n = arguments.n[0]
-    print("Encrypting using: " + str(num_bits) + " bits, m: " + str(m) + " n: " + str(n))
+    print("Encrypting using: " + str(num_bits) + " bits, Message: m: " + str(m) + " n: " + str(n))
+    # Generate our napsack
 
 
 if __name__ == '__main__':
