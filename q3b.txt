@@ -1,0 +1,7 @@
+Q3b: 1 point: Explain Man in the middle attack in Diffie Hellman key exchange.
+
+Essentially, a Man in the Middle (MitM) attack can be successfully done in this exchange
+in the initial broadcast of the public values. If either party is not verified as the correct
+party, then the sharing of whole process is pointless - this is why fingerprinting is very very
+important in secure communications and why SSH will yell at you by default if your server's fingerprint
+changes.
